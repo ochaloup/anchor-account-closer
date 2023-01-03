@@ -1,0 +1,20 @@
+[package]
+name = "solana-account-closer"
+version = "0.0.1"
+description = "Solana helper contract for account closing"
+authors = ["chalda <ondrej.chaloupka@protom.me>"]
+repository = "https://github.com/ochaloup/solana-account-closer"
+edition = "2021"
+
+[features]
+no-entrypoint = []
+
+[dependencies]
+borsh = "0.9.3"
+borsh-derive = "0.9.3"
+solana-program = "~1.14.11"
+thiserror = "1.0.38"
+
+[lib]
+name = "solana_account_closer"
+crate-type = ["cdylib", "lib"]

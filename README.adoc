@@ -1,0 +1,17 @@
+= Solana helper contract for account close
+
+A helper contract which is used to close accounts.
+It could be used for testing purposes.
+
+Obvious assumption is that the closing account
+has to be owned by this program.
+
+== To build
+
+Have installed the https://docs.solana.com/getstarted/local[solana utils].
+
+[source,sh]
+----
+cargo build-sbf
+ls target/sbf-solana-solana/release/
+----
